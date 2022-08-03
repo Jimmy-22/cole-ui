@@ -42,6 +42,6 @@ vue-jest 和 @vue/test-utils 是测试 Vue 组件必备的库，然后安装 bab
 ```js
 npm install -D jest@26 vue-jest@next @vue/test-utils@next 
 npm install -D babel-jest@26 @babel/core @babel/preset-env 
-npm install -D ts-jest@26 @babel/preset-typescript @types/jest
+npm install -D ts-jest@26 @babel/preset-typescript @types/jest@26
 ```
 安装完毕后，在根目录下新建 babel.config.js。配置目的是让 babel 解析到 Node 和 TypeScript 环境下。再新建 jest.config.js，用来配置 jest 的测试行为
