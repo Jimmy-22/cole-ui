@@ -35,3 +35,13 @@
 npm install sass --save-dev -->
 
 安装sass `npm install sass -D`
+
+**组件库引入Jest**
+
+vue-jest 和 @vue/test-utils 是测试 Vue 组件必备的库，然后安装 babel 相关的库，最后安装 Jest 适配 TypeScript 的库
+```js
+npm install -D jest@26 vue-jest@next @vue/test-utils@next 
+npm install -D babel-jest@26 @babel/core @babel/preset-env 
+npm install -D ts-jest@26 @babel/preset-typescript @types/jest
+```
+安装完毕后，在根目录下新建 babel.config.js。配置目的是让 babel 解析到 Node 和 TypeScript 环境下。再新建 jest.config.js，用来配置 jest 的测试行为
