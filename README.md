@@ -8,6 +8,7 @@
   npx husky install // 初始化husky
   // 新增commit msg钩子
   npx husky add .husky/commit-msg "node scripts/verifyCommit.js"
+  // 备注：这里npx如果用不了，可以换成yarn
 ```
 在 verifyCommit.js 文件中，先去 .git/COMMIT_EDITMSG 文件中读取了 commit 提交的信息，然后使用了正则去校验提交信息的格式。如果 commit 的信息不符合要求，会直接报错并且终止代码的提交。这样就确保在 github 中的提交日志都符合`type(scope):message`的格式。
 
@@ -29,6 +30,8 @@
 - release: 发版
 - deps: 依赖相关的修改
 
-`npm install node-sass`
+<!-- npm install node-sass
 
-`npm install sass --save-dev`
+npm install sass --save-dev -->
+
+安装sass `npm install sass -D`
